@@ -223,7 +223,7 @@
                 <version>3.23.0</version>
                 <configuration>
                     <rulesets>
-                        <ruleset>rulesets.xml</ruleset>
+                        <ruleset>/mnt/f/cs/java/git/Teedy3/rulesets.xml</ruleset>
                     </rulesets>
                 </configuration>
             </plugin>
