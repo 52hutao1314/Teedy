@@ -25,6 +25,12 @@ pipeline {
         stage('Building image') {
             steps {
                 script {
+                    sh '''
+                        unset http_proxy
+                        unset https_proxy
+                        unset HTTP_PROXY
+                        unset HTTPS_PROXY
+                    '''
                     // assume Dockerfile locate at root
                     docker.build("${env.DOCKER_IMAGE}:${env.DOCKER_TAG}")
                 }
