@@ -33,6 +33,11 @@ pipeline {
         
         // Uploading Docker images into Docker Hub
         stage('Upload image') {
+            environment {
+                // 设置 HTTP/HTTPS 代理（替换 7890 为你的代理端口）
+                http_proxy = "http://127.0.0.1:7890"
+                https_proxy = "http://127.0.0.1:7890"
+            }
             steps {
                 script {
                     // sign in Docker Hub
