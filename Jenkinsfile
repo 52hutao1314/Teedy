@@ -2,7 +2,7 @@ pipeline {
     agent any
     environment {
         DEPLOYMENT_NAME = "hello-node"
-        CONTAINER_NAME = "teddy-lab13-container"
+        CONTAINER_NAME = "docs"
         IMAGE_NAME = "sismics/docs:v1.11"
     }
     stages {
